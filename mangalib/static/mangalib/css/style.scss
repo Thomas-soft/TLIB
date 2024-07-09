@@ -1,0 +1,130 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+table
+{
+    margin: 50px 0px;
+    max-width: 90%;
+    caption
+    {
+        padding: 20px 0px;
+    }
+    tbody td, th
+    {
+        padding: 10px;
+        max-width: 400px;
+        background-color: #4873ff6a;
+    }
+    tfoot td
+    {
+        padding: 10px 10px 0px;
+    }
+    tbody td
+    {
+        text-align: center;
+    }
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.fa-solid.fa-pen
+{
+    color: aqua;
+}
+
+.fa-solid.fa-trash-can
+{
+    color: red;
+}
+
+.fa-solid.fa-circle-plus
+{
+    color: rgba(47, 255, 47, 0.746);
+}
+
+p, h2
+{
+    padding: 10px 0px;
+}
+
+.container-book
+{
+    padding: 20px;
+    a
+    {
+        margin: 10px 0px 0px -5px;
+        padding: 5px 5px;
+        background-color: #4897ff;
+        font-weight: 550;
+        border-radius: 10px;
+        color: #ffffffab;
+        &:hover
+        {
+            color: #ffffff;
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+        transition: 0.2s ease;
+    }
+}
+
+.button
+{
+    margin: 30px 0px;
+}
+
+form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    label
+    {
+        width: 100%;
+        text-align: left;
+    }
+    
+    input[type="text"], input[type="number"], select
+    {
+        padding: 6px;
+        width: 100%;
+        margin: 10px 0px 20px;
+        border-style: none;
+        outline: none;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        &:focus
+        {
+            border: 2px solid #222;
+            transition: 0.6s ease;
+        }
+        transition: 0.6s ease;
+    }
+}
+
+input[type="submit"]
+{
+    padding: 5px 50px;
+    background-color: #4897ff;
+    font-weight: 550;
+    border-radius: 10px;
+    color: aliceblue;
+    border: none;
+    margin: 10px 0px 0px -5px;
+    &:hover
+    {
+        color: #ffffff;
+        transition: 0.2s ease;
+        cursor: pointer;
+    }
+    transition: 0.2s ease;
+}

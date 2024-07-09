@@ -1,0 +1,9 @@
+{% include "mangalib/includes/begin_page.html" %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+
+{% include "mangalib/includes/end_page.html" %}

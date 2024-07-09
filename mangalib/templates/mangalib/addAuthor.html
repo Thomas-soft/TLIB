@@ -1,0 +1,21 @@
+{% include "mangalib/includes/begin_page.html" %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+{% if form.errors %}
+    <div style="color: red;">
+        <p>Please fix the following errors:</p>
+        <ul>
+            {% for field in form %}
+                {% for error in field.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}
+
+{% include "mangalib/includes/end_page.html" %}

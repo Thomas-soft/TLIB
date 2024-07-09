@@ -1,0 +1,13 @@
+{% include "mangalib/includes/begin_page.html" %}
+
+<section class="container-book">
+    <h2>{{ book.title }}</h2>
+    <p>Author: {{ book.author.name }}</p>
+    <p>Release date: {{ book.releaseDate | date:"d/m/Y \a\t H\hi" }}</p>
+    <p>Quantity: {{ book.quantity }}</p>
+    <div class="button">
+        <a href="{% url 'mangalib:manga' %}">Return to home page</a>
+    </div>
+</section>
+
+{% include "mangalib/includes/end_page.html" %}

@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+table {
+  margin: 50px 0px;
+  max-width: 90%;
+}
+table caption {
+  padding: 20px 0px;
+}
+table tbody td, table th {
+  padding: 10px;
+  max-width: 400px;
+  background-color: rgba(72, 115, 255, 0.4156862745);
+}
+table tfoot td {
+  padding: 10px 10px 0px;
+}
+table tbody td {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-solid.fa-pen {
+  color: aqua;
+}
+
+.fa-solid.fa-trash-can {
+  color: red;
+}
+
+.fa-solid.fa-circle-plus {
+  color: rgba(47, 255, 47, 0.746);
+}
+
+p, h2 {
+  padding: 10px 0px;
+}
+
+.container-book {
+  padding: 20px;
+}
+.container-book a {
+  margin: 10px 0px 0px -5px;
+  padding: 5px 5px;
+  background-color: #4897ff;
+  font-weight: 550;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.6705882353);
+  transition: 0.2s ease;
+}
+.container-book a:hover {
+  color: #ffffff;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.button {
+  margin: 30px 0px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form label {
+  width: 100%;
+  text-align: left;
+}
+form input[type=text], form input[type=number], form select {
+  padding: 6px;
+  width: 100%;
+  margin: 10px 0px 20px;
+  border-style: none;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: 0.6s ease;
+}
+form input[type=text]:focus, form input[type=number]:focus, form select:focus {
+  border: 2px solid #222;
+  transition: 0.6s ease;
+}
+
+input[type=submit] {
+  padding: 5px 50px;
+  background-color: #4897ff;
+  font-weight: 550;
+  border-radius: 10px;
+  color: aliceblue;
+  border: none;
+  margin: 10px 0px 0px -5px;
+  transition: 0.2s ease;
+}
+input[type=submit]:hover {
+  color: #ffffff;
+  transition: 0.2s ease;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

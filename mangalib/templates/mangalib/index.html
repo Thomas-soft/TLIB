@@ -1,0 +1,35 @@
+{% include "mangalib/includes/begin_page.html" %}
+    <table>
+        <caption><h1>Mangalib</h1></caption>
+        <thead>
+            <tr>
+                <th>Books</th>
+                <th>Author</th>
+                <th>Quantity</th>
+                <th colspan="2">ACTIONS</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td><a href="{% url 'mangalib:book' book.id %}">{{ book.title }}</a></td>
+                <td><a href="{% url 'mangalib:author' book.author.id %}">{{ book.author.name }}</a></td>
+                <!-- <td><a href="{% url 'mangalib:manga' %}">Yoshihiro Togashi</a></td> -->
+                <td>{{ book.quantity }}</td>
+                <th><a href="{% url 'mangalib:edit-book' book.id %}" class="fa-solid fa-pen"></a></th>
+                <th><a href="{% url 'mangalib:remove-book' book.id %}" class="fa-solid fa-trash-can"></a></th>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"><a href="{% url 'mangalib:add-book' %}"><i class="fa-solid fa-circle-plus"></i> Add book</a></td>
+            </tr>
+            <tr>
+                <td colspan="4"><a href="{% url 'mangalib:add-author' %}"><i class="fa-solid fa-circle-plus"></i> Add author</a></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+{% include "mangalib/includes/end_page.html" %}
