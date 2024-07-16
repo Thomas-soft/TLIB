@@ -5,3 +5,5 @@ Run server:
     ```bash
     python3 manage.py runserver
     ```
+
+![Here is the homepage](./screen.png)

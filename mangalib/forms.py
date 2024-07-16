@@ -15,3 +15,9 @@ class FormBook(forms.ModelForm):
     class Meta:
         model = Book
         fields = ["title", "author", "quantity"]
+
+    def clean_quantity(self):
+        quantity = self.cleaned_data['quantity']
+        if (quantity < 1):
+            raise forms.ValidationError("La quantité du livre doit être supérieur à 0.")
+        return (quantity)

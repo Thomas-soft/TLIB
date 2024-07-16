@@ -1,0 +1,16 @@
+{% include 'accounts/includes/begin_page.html' %}
+
+{% for message in messages %}
+<p>{{ message }}</p>
+{% endfor %}
+
+<section>
+    <h1>Register</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+{% include 'accounts/includes/end_page.html' %}

@@ -76,33 +76,14 @@ form label {
   width: 100%;
   text-align: left;
 }
-form input[type=text], form input[type=number], form select {
-  padding: 6px;
-  width: 100%;
+form input[type=text], form input[type=number], form input[type=password], form select {
   margin: 10px 0px 20px;
-  border-style: none;
-  outline: none;
-  border-radius: 10px;
-  border: 2px solid transparent;
-  transition: 0.6s ease;
-}
-form input[type=text]:focus, form input[type=number]:focus, form select:focus {
-  border: 2px solid #222;
-  transition: 0.6s ease;
 }
 
 input[type=submit] {
-  padding: 5px 50px;
-  background-color: #4897ff;
-  font-weight: 550;
-  border-radius: 10px;
-  color: aliceblue;
-  border: none;
   margin: 10px 0px 0px -5px;
-  transition: 0.2s ease;
 }
-input[type=submit]:hover {
-  color: #ffffff;
-  transition: 0.2s ease;
-  cursor: pointer;
+
+img {
+  max-width: 100px;
 }/*# sourceMappingURL=style.css.map */

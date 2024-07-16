@@ -92,39 +92,19 @@ form
         width: 100%;
         text-align: left;
     }
-    
-    input[type="text"], input[type="number"], select
+
+    input[type="text"], input[type="number"], input[type="password"], select
     {
-        padding: 6px;
-        width: 100%;
         margin: 10px 0px 20px;
-        border-style: none;
-        outline: none;
-        border-radius: 10px;
-        border: 2px solid transparent;
-        &:focus
-        {
-            border: 2px solid #222;
-            transition: 0.6s ease;
-        }
-        transition: 0.6s ease;
     }
 }
 
 input[type="submit"]
 {
-    padding: 5px 50px;
-    background-color: #4897ff;
-    font-weight: 550;
-    border-radius: 10px;
-    color: aliceblue;
-    border: none;
     margin: 10px 0px 0px -5px;
-    &:hover
-    {
-        color: #ffffff;
-        transition: 0.2s ease;
-        cursor: pointer;
-    }
-    transition: 0.2s ease;
+}
+
+img
+{
+    max-width: 100px;
 }
